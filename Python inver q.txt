@@ -1,0 +1,202 @@
+1️⃣ What is Python?
+Python is a high-level, interpreted programming language known for its readability and versatility. It supports multiple paradigms: procedural, object-oriented, and functional.
+
+2️⃣ Difference between Python 2 and Python 3?
+Python 3 is the future — it has better Unicode support, print() as a function, and improved syntax. Python 2 is outdated and no longer maintained.
+
+3️⃣ What are variables and data types in Python?
+Variables store data. Python has dynamic typing.
+Common types: int, float, str, bool, list, tuple, dict, set
+
+4️⃣ What are Python operators?
+Operators perform operations on variables:
+– Arithmetic: +, -, *, /
+– Comparison: ==, !=, >, <
+– Logical: and, or, not
+– Assignment: =, +=, -=
+
+5️⃣ What is type conversion and casting?
+Changing data types manually or automatically.
+Example: int("5") converts string to integer.
+
+6️⃣ What are if-else statements?
+Used for decision-making.
+python
+if x> 0:
+    print("Positive")
+else:
+    print("Non-positive")
+
+
+7️⃣ What is a loop in Python?
+Used to repeat code.
+– for loop: iterates over sequences
+– while loop: runs while condition is true
+
+8️⃣ What is the use of break, continue, pass?
+– break: exits loop
+– continue: skips to next iteration
+– pass: placeholder, does nothing
+
+9️⃣ What is a ternary operator?
+One-line if-else:
+python
+result = "Yes" if x> 0 else "No"
+
+
+🔟 What is list comprehension?
+A concise way to create lists:
+python
+squares = [x*x for x in range(5)]
+
+
+
+
+
+
+
+
+
+
+
+1️⃣ What are functions in Python?  
+Functions are reusable blocks of code that perform specific tasks. They are defined using the def keyword and can take parameters.  
+ 
+def greet(name):
+    return f"Hello, {name}!"
+print(greet("Sahil"))  # Output: Hello, Sahil!
+
+
+2️⃣ What is the difference between lists and tuples?  
+Lists are mutable (can be changed) and use square brackets []. Tuples are immutable (cannot be changed) and use parentheses ().
+
+3️⃣ What are dictionaries in Python?  
+Dictionaries store data as key-value pairs using curly braces {}. Keys must be unique and immutable.  
+ 
+person = {"name": "Abhinav", "city": "Pune"}
+print(person["name"])  # Output: Abhinav
+
+
+4️⃣ Explain Python strings and common methods.  
+Strings are immutable sequences of characters enclosed in quotes. Common methods: .upper(), .lower(), .split(), .replace().
+
+5️⃣ What are Python modules?  
+Modules are Python files with reusable code (import math). Packages are directories of modules with __init__.py.
+
+6️⃣ How do you handle exceptions in Python?  
+Use try-except blocks to catch and handle errors gracefully.  
+ 
+try:
+    num = int(input("Enter number: "))
+except ValueError:
+    print("Invalid input!")
+
+
+7️⃣ What is the difference between == and is?  
+== compares values; is compares object identity (memory location).
+
+8️⃣ What are lambda functions?  
+Anonymous one-line functions using lambda keyword.  
+ 
+square = lambda x: x*x
+print(square(5))  
+# Output: 25
+
+
+9️⃣ Explain range() function.  
+range(start, stop, step) generates sequences of numbers. Commonly used in for loops.
+
+🔟 What is PEP 8?  
+Python's official style guide for readable code (indentation, naming conventions, line length). 
+
+
+
+
+
+
+
+
+1️⃣ What are Python iterators and iterables?
+  
+Iterables have __iter__() or __getitem__(). 
+
+Iterators have __next__() and track position.  
+ 
+my_list = [1,2,3]
+iterator = iter(my_list)
+print(next(iterator))  # 1
+
+
+2️⃣ What is the difference between / and //?  
+
+/ is float division. 
+
+// is floor division (integer result).  
+ 
+print(7/2)  # 3.5
+print(7//2) # 3
+
+
+3️⃣ Explain map(), filter(), reduce().  
+
+map() applies function to iterable. 
+filter() selects items. 
+reduce() aggregates pairs.  
+ 
+numbers = [1,2,3]
+squares = list(map(lambda x: x**2, numbers))  # [1,4,9]
+
+
+4️⃣ What are generators?  
+Functions with yield that produce values lazily on-demand. Memory efficient.  
+ 
+def countdown(n):dxcc
+    while n > 0:
+        yield n
+        n -= 1
+
+
+5️⃣ What is enumerate() used for?  
+Returns index and value pairs from iterables.  
+ 
+fruits = ["apple", "banana"]
+for i, fruit in enumerate(fruits):
+    print(i, fruit)  # 0 apple, 1 banana
+
+
+6️⃣ Explain zip() function.  
+Combines multiple iterables into tuples.  
+ 
+names = ["Deepak", "Viniti"]
+ages = [26,25]
+print(list(zip(names, ages)))  # [("Deepak", 26), ("Viniti", 25)]
+
+
+7️⃣ What is shallow copy vs deep copy?  
+
+shallow copy: copy.copy() - copies object but not nested objects.  
+
+deep copy: copy.deepcopy() - copies everything recursively.
+
+8️⃣ What are sets in Python?  
+
+Unordered collections of unique elements. 
+
+Use {} or set(). 
+Great for membership testing.  
+ 
+unique_nums = {1,2,2,3}  # {1,2,3}
+
+
+9️⃣ Explain global and nonlocal keywords.  
+
+global declares variable global scope. 
+nonlocal modifies enclosing scope variable.
+
+🔟 What is __name__ == __main__?  
+
+Special variable. 
+Code runs only when file executed directly, not imported.  
+ 
+if __name__ == __main__:
+    print("Running directly!")
